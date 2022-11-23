@@ -1,0 +1,8 @@
+type Mutation {
+    confirmCustomer(
+        customerId: Int!,
+        confirmationToken: String!
+    ): Boolean
+    @resolver(class: "\\ReachDigital\\CustomerConfirmationGraphQl\\Model\\Resolver\\ConfirmCustomer")
+    @doc(description: "Confirm the customer account using the confirmation token that the customer received in an email after registering createCustomerV2.")
+}
