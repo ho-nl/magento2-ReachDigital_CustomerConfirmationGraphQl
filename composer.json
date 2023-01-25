@@ -5,6 +5,9 @@
   "require": {
     "magento/framework": "*"
   },
+  "license": [
+    "MIT"
+  ],
   "autoload": {
     "files": [
       "registration.php"
