@@ -1,6 +1,6 @@
 # ReachDigital_CustomerConfirmationGraphQl
 
-Add GraphQL mutation for confirming customers when this setting is enabled, see `src/etc/schema.graphqls`.
+Add GraphQL mutation for confirming customers when this setting is enabled, see [`src/etc/schema.graphqls`](https://github.com/ho-nl/magento2-ReachDigital_CustomerConfirmationGraphQl/blob/main/src/etc/schema.graphqls).
 
 ## Installation
 
