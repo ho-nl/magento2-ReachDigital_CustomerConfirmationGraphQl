@@ -17,13 +17,12 @@ class ConfirmCustomer implements ResolverInterface
 {
     private AccountManagementInterface $customerAccountManagement;
 
-    public function __construct(
-        AccountManagementInterface $customerAccountManagement
-    ) {
+    public function __construct(AccountManagementInterface $customerAccountManagement)
+    {
         $this->customerAccountManagement = $customerAccountManagement;
     }
 
-    public function resolve(Field $field, $context, ResolveInfo $info, array $value = null, array $args = null): bool
+    public function resolve(Field $field, $context, ResolveInfo $info, ?array $value = null, ?array $args = null): bool
     {
         $customerId = $args['customerId'];
         $token = $args['confirmationToken'];
